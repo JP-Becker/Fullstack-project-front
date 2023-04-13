@@ -2,7 +2,7 @@ import logo from "../../assets/logo.svg"
 import { StyleHeader } from "./styledHeader"
 import { goToLoginPage } from "../../router/coordinator"
 import { useNavigate, useLocation } from "react-router-dom"
-import close from "../../assets/closemodal.svg"
+import close from "../../assets/close.svg"
 import { useContext } from "react"
 import { GlobalContext } from "../../context/GlobalContext"
 
