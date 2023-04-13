@@ -1,11 +1,16 @@
-import Header from './components/Header/Header';
+import { GlobalContext } from "./context/GlobalContext";
+import { GlobalStyled } from "styled-components";
+import GlobalState from "./context/GlobalState";
+import Router from "./router/Router";
 
 function App() {
   return (
-    <div>
-      <h1>test</h1>
-      <Header />
-    </div>
+    <>
+      <GlobalStyled/>
+      <GlobalContext.Provider value={context}>
+        <Router/>
+      </GlobalContext.Provider>
+    </>
   );
 }
 
