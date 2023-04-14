@@ -1,4 +1,4 @@
-import logo from "../../assets/logoBig.svg"
+import logo from "../../assets/logoGrande.svg"
 import axios from "axios"
 import { StyleMain, StyleSectionLoginSignup } from "../../constants/stylePages"
 import { goToSignUpPage, goToHomePage } from "../../router/coordinator"
