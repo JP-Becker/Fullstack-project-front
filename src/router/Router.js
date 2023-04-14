@@ -4,17 +4,17 @@ import SignupPage from "../pages/SignupPage/SignupPage";
 import HomePage from "../pages/HomePage/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage/NotFoundPage";
 
-function Routerr(){
+function Router(){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<LoginPage/>}/>
-                <Route path="/signup" element={<SignupPage/>}/>
-                <Route path="/main" element={<HomePage/>}/>
+                <Route path="/" element={<LoginPage />}/>
+                <Route path="/signup" element={<SignupPage />}/>
+                <Route path="/main" element={<HomePage />}/>
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     )
 }
 
-export default Routerr
+export default Router
