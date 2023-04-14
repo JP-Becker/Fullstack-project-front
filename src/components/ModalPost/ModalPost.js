@@ -5,7 +5,7 @@ import {GlobalContext} from "../../context/GlobalContext"
 import { StyleContainerModal, StyleSection } from "./styleModalPost"
 import like from "../../assets/like.svg"
 import dislike from "../../assets/dislike.svg"
-import coment from "../../assets/coment.svg"
+import comment from "../../assets/comment.svg"
 import { useEffect, useState } from "react"
 import { BASE_URL } from "../../constants/BASE_URL"
 
@@ -100,7 +100,7 @@ function ModalPost(props){
                                     <img src={dislike} onClick={()=>dislikePost(post.id)} alt="botão-dislike"/> 
                                 </span> 
                                 <span className="subText">
-                                    <img src={coment} alt="botão-comentários" />
+                                    <img src={comment} alt="botão-comentários" />
                                     {post.comments}
                                 </span>
                             </p>

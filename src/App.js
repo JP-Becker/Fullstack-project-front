@@ -1,7 +1,7 @@
 import { GlobalContext } from "./context/GlobalContext";
 import { GlobalStyled } from "./GlobalStyled";
 import GlobalState from "./context/GlobalState";
-import Routerr  from "./router/Routerr";
+import Router  from "./router/Router";
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
       <GlobalStyled/>
       <GlobalContext.Provider value={context}>
-        <Routerr/>
+        <Router/>
       </GlobalContext.Provider>
     </>
   );
