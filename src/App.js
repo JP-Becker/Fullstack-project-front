@@ -1,14 +1,18 @@
 import { GlobalContext } from "./context/GlobalContext";
-import { GlobalStyled } from "styled-components";
+import { GlobalStyled } from "./GlobalStyled";
 import GlobalState from "./context/GlobalState";
-import Router from "./router/Router";
+import Routerr  from "./router/Routerr";
+
 
 function App() {
+
+  const context = GlobalState()
+
   return (
     <>
       <GlobalStyled/>
       <GlobalContext.Provider value={context}>
-        <Router/>
+        <Routerr/>
       </GlobalContext.Provider>
     </>
   );
